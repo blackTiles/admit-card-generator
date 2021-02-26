@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    font-size: 18px;
+}
+body{
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.container form{
+    background:white;
+    padding: 20px 10px 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px;
+}
+h2{
+   text-decoration: underline;
+}
+.hall-ticket{
+    padding-top:20px;
+}
+.date-of-birth{
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+button{
+    border: none;
+    padding:10px;
+    font-size: 17px;
+    outline: none;
+    background: transparent;
+    border: 1px solid green;
+    border-radius: 10px;
+    color: green;
+    cursor: pointer;
+}
+button:hover{
+    border: 1px solid green;
+    outline: none;
+    background: rgb(35, 129, 35);
+    color: white;
+}
+input{
+    width: 250px;
+    height:30px;
+    outline: none;
+    font-size: 15px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+}
+.btn a button{
+    color:white;
+    border: 1px solid white;
+}
+#download{
+    color: green;
+    background:white;
+    margin:40px auto;
+    width: fit-content;
+    padding: 10px;
+    font-size:15px;
+    text-align: center;
+    cursor: pointer;
+    border-radius:10px;   
+    box-shadow:0px 0px 10px black;
+}
+.box{
+    width: 99%;
+    background: white;
+    margin: 10px auto;
+    padding: 5px 5px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    border: 1px solid black;
+}
+.box-one{
+    width:100%;
+    height: 100%;
+    border: 1px solid black;
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+}
+.head-hi{
+    padding: 10px 0px 10px 0px;
+}
+.web-mail{
+    padding-bottom: 10px;
+    border-bottom: 3px dashed black;
+}
+.form-head-one{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.box-one h2,h3,p{
+    display: inline-block;
+    text-align: center;
+}
+.box-two{
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.75fr;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+}
+.box-two>div{
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    padding:10px;
+}
+.second,.fourth,.sixth,.eighth,.ninth,.eleventh,.thirteenth,.fifteenth,.seventeenth{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+
+}
+.eighteenth{
+    grid-column: 3/4;
+    grid-row: 1/8;
+}
+.photo{
+    column-count: 1;
+
+}
+.photo img{
+    width: 100%;
+}
+.photo .sign{
+    margin: 20px 5px 20px 5px;
+    border: 1px solid black;
+    padding: 50px 10px 20px 10px;
+}
+.fifteenth{
+    grid-column:2/4;
+}
+.seventeenth{
+    grid-column:2/4;
+}
+
+.box-three .footer{
+    width: 100%;
+    text-align: justify;
+}
+.box-three .bottom{
+    display:block;
+    text-align: right;
+}
+@media(max-width: 1000px){
+    .box{
+        width: 99%;
+    }
+}
