@@ -11,46 +11,46 @@
 
 <body>
     <div class="btn">
-        <div id="download">Click to Download Pdf of Your <span style="color:red">Admit Card</span>
-            <br><span style="color:red">एडमिट कार्ड</span> डाउनलोड करने के लिए यहाँ दबाएँ</div>
+        <div id="download">Click here to Download Pdf of Your <span style="color:red">Admit Card</span>
+        </div>
         <a href="/logout"><button>Logout</button></a>
     </div>
     <div class="box" id="invoice">
         <div class="box-one">
             <h2 class="head-en">RASHTRIYA MILITARY SCHOOL BENGALURU</h2>
-            <h3 lang="hi" class="head-hi">(राष्ट्रीय मिलिट्री स्कूल बेंगलुरु)</h3>
+            <!-- <h3 lang="hi" class="head-hi">(राष्ट्रीय मिलिट्री स्कूल बेंगलुरु)</h3> -->
             <p class="addr-en">(PB No:-25040, Museum Road PO, Opp. Johnson Market, Hosur Road, Bengaluru - 560025)</p>
-            <p lang="hi" class="addr-hi">(पीबी नंबर २५०४० म्यूजियम रोड पीओ, जॉनसन मार्केट, होसुर रोड, बेंगलुरु - 560025)
+            <!-- <p lang="hi" class="addr-hi">(पीबी नंबर २५०४० म्यूजियम रोड पीओ, जॉनसन मार्केट, होसुर रोड, बेंगलुरु - 560025) -->
             </p>
-            <p class="web-mail">Website(वेबसाइट):- www.rashtriyamilitaryschools.edu.in, email(ईमेल):-
+            <p class="web-mail">Website:- www.rashtriyamilitaryschools.edu.in, email:-
                 rmsbengaluru@gmail.com</p>
             <h2 class="form-head-one">DIRECT RECRUITMENT OF CIVILAIN GROUP 'C'</h2>
             <h2 class="form-head-two">ADMIT CARD</h2>
         </div>
         <div class="box-two">
-            <div class="first">DATE OF EXAMINATION <br>परीक्षा की तारीख</div>
+            <div class="first">DATE OF EXAMINATION</div>
             <div class="second">21 MARCH 2021</div>
-            <div class="third">TIME OF EXAMINATION <br>परीक्षा का समय</div>
+            <div class="third">TIME OF EXAMINATION</div>
             <div class="fourth">10:00 AM</div>
-            <div class="fifth">POST FOR WHICH APPEARING <br>जो पद के नाम के लिए आवेदन किया</div>
+            <div class="fifth">POST FOR WHICH APPEARING</div>
             <div class="sixth">{{ data['appearingpost'] }}</div>
-            <div class="seventh">ROLL NO <br>अनुक्रमांक</div>
+            <div class="seventh">ROLL NO</div>
             <div class="eighth">{{ data['rollno'] }}</div>
-            <div class="ninth-before">NAME OF THE CANDIDATE <br>उम्मीदवार का नाम</div>
+            <div class="ninth-before">NAME OF THE CANDIDATE</div>
             <div class="ninth">{{ data['name'] }}</div>
-            <div class="tenth">FATHER'S NAME <br>पिता का नाम</div>
+            <div class="tenth">FATHER'S NAME</div>
             <div class="eleventh">{{ data['fathername'] }}</div>
-            <div class="twelth">DOB(DD/MM/YY) <br>जन्म की तारीख</div>
+            <div class="twelth">DOB(DD/MM/YY)</div>
             <div class="thirteenth">{{ data['dob'] }}</div>
-            <div class="fourteenth">VENUE OF EXAMINATION <br>परीक्षा का स्थान</div>
+            <div class="fourteenth">VENUE OF EXAMINATION</div>
             <div class="fifteenth">RASHTRIYA MILITARY SCHOOL BENGALURU<br>PB No:-25040, Museum Road PO, Opp. Johnson Market, Hosur Road, Bengaluru - 560025</div>
-            <div class="sixteenth">ADDRESS OF THE CANDIDATE <br>उम्मीदवार का पता</div>
+            <div class="sixteenth">ADDRESS OF THE CANDIDATE</div>
             <div class="seventeenth">{{ data['address'] }}</div>
             <div class="eighteenth photo">
-                <img src="{{url_for('static', filename='one.jpg')}}" alt="">
+                <img src="{{url_for('static', filename=data['rollno'] ~ '.png' )}}" alt="">
                 <div class="sign">
                     <div class="sign-box"></div>
-                    <p class="signature">Signature/हस्ताक्षर</p>
+                    <p class="signature">Signature</p>
                 </div>
             </div>
         </div><br>
